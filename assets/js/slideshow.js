@@ -20,7 +20,8 @@ class Slideshow {
 
         this.page = page;
         this.count = count;
-        console.log("count", this.count);
+
+        this.countLabel.innerHTML = this.count;
     }
 
     setEventButtonSlides = () => {
