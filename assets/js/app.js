@@ -10,6 +10,14 @@ const init = () => {
         document.querySelector('.slides .slide-item-resource-content').childElementCount
     );
     slides.ready();
+
+    const drawer = new Drawer(
+        document.getElementById('drawerOpenButton'),
+        document.getElementById('drawerCloseElement'),
+        document.querySelector('.drawer-cover'),
+        document.querySelector('.drawer-navigation')
+    );
+    drawer.ready();
 };
 
 window.addEventListener('load', init);

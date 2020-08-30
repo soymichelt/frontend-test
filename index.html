@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home - veggiebite</title>
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="assets/css/style-mobile.css" media="(max-width: 768px)" />
+        <link rel="stylesheet" href="assets/css/style.css" media="(min-width: 769px)" />
         <link rel="stylesheet" href="assets/fonts/fonts-awesome/css/all.css" />
     </head>
     <body>
@@ -118,14 +120,58 @@
                     <a class="nav__icon" href="#">
                         <img alt="fav" src="assets/res/search.png" />
                     </a>
-                    <a class="nav__icon" href="#">
+                    <a id="drawerOpenButton" class="nav__icon" href="#">
                         <img alt="fav" src="assets/res/menu.png" />
                     </a>
                 </nav>
             </aside>
         </section>
-        <section></section>
+
+        <section id="drawerCloseElement" class="drawer-cover"></section>
+        <ul class="drawer-navigation">
+            <li>
+                <a class="logo">
+                    <img
+                        alt="logo"
+                        src="assets/res/logo.png"
+                    />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Acerca de...
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contacto
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Políticas de privacidad
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Condiciones
+                </a>
+            </li>
+            <li class="social-links drawer-social">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-vimeo-v"></i>
+                </a>
+            </li>
+        </ul>
+
         <script src="assets/js/slideshow.js"></script>
+        <script src="assets/js/drawer.js"></script>
         <script src="assets/js/app.js"></script>
     </body>
 </html>
