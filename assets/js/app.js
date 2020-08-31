@@ -18,6 +18,8 @@ const init = () => {
         document.querySelector('.drawer-navigation')
     );
     drawer.ready();
+
+    if(screen.lockOrientation) screen.lockOrientation('portroit');
 };
 
 window.addEventListener('load', init);
