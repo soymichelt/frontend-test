@@ -5,6 +5,9 @@
     --main-text-color: #a9bac4;
     --main-text-light: #fff;
 }
+@viewport {
+    orientation: portrait;
+}
 @font-face {
     font-family: "proxima-nova";
     src: url("../fonts/proxima-nova/proxima-nova-semibold.woff") format('woff');
@@ -369,3 +372,5 @@ body {
         margin-top: 2.5rem;
     }
 }
+
+/*@media screen and (max-height: 640)*/

@@ -19,7 +19,7 @@ const init = () => {
     );
     drawer.ready();
 
-    if(screen.lockOrientation) screen.lockOrientation('portroit');
+    if(screen.lockOrientation) screen.lockOrientation('portrait');
 };
 
 window.addEventListener('load', init);
