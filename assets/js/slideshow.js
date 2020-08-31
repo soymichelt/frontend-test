@@ -41,7 +41,6 @@ class Slideshow {
 
     handleSlideButtonClick = (direction = 'next') => {
         this.slideCurrent.classList.remove(this.classIsActive);
-        console.log('direction: ' + direction);
         if(direction === 'next') {
             this.slideCurrent = this.slideCurrent.nextElementSibling
                 ? this.slideCurrent.nextElementSibling
